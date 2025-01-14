@@ -11,23 +11,22 @@
 
     <?php
 
-    $parametro = 2;
+    //gettype() => retorna o tipo da variável
+    $valor = false;
+    // $valor2 = (float) $valor; //float ou double
+    // $valor2 = (string) $valor;
 
-    switch ($parametro) {
-        case 1:
-            echo 'Entrou no case 1';
-            break;
-        case 2:
-            echo 'Entrou no case 2';
-            break;
-        case 3:
-            echo 'Entrou no case 3';
-            break;
+    // $valor2 = (int) $valor;
+    // $valor2 = (string) $valor;
 
-        default:
-            echo 'Entrou no default';
-            break;
-    }
+    // $valor2 = (boolean) $valor; //bool,boolean
+
+    $valor2 = (int) $valor; //bool,boolean
+
+    echo $valor .''. gettype($valor);
+    echo '<br />';
+    echo $valor2 .''. gettype($valor2);
+
     ?>
 
 
